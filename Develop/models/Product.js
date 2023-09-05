@@ -20,17 +20,17 @@ Product.init(
     allowNull: false,
   },
   price: {
-    type: DataTypes.DECIMAL(10, 2), // Example for a price with 2 decimal places
+    type: DataTypes.DECIMAL(10, 2), 
     allowNull: false,
   },
   stock: {
     type: DataTypes.INTEGER,
-    defaultValue: 10, // Example default value
+    defaultValue: 10, 
   },
   category_id: {
     type: DataTypes.INTEGER,
     references: {
-      model: 'category', // Assuming you have a 'category' table
+      model: 'category', 
       key: 'id',
     },
   },
